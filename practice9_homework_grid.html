@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html, body{
+        background-color: RGB(90,90,90);
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+    }
+
+    #base {
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        display:grid;
+        grid-template-columns: 150px auto 150px;
+    }
+
+    #container-left {
+        background-color: rosybrown;
+        width:auto;
+        height:auto;
+        margin:0px;
+        padding:0px;
+    }
+
+    #container-mid {
+        background-color:linen;
+        width:auto;
+        height:auto;
+        margin:0px;
+        padding:0px;
+        display:grid;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    #container-right {
+        background-color: rosybrown;
+        width:auto;
+        height:auto;
+        margin:0px;
+        padding:0px;
+    }
+
+    #item1 {
+        background-color:lightgray;
+        width:auto;
+        height:auto;
+        margin:16px 16px 8px 16px;
+        padding:16px;
+    }
+
+    #item2 {
+        background-color:lightgray;
+        width:auto;
+        height:auto;
+        margin:8px 16px 8px 16px;
+        padding:16px;
+    }
+
+    #item3 {
+        background-color:lightgray;
+        width:auto;
+        height:auto;
+        margin:8px 16px 16px 16px;
+        padding:16px;
+    }
+
+</style>
+<body>
+    <div id="base">
+        <div id="container-left"></div>
+        <div id="container-mid">
+                <div id="item1">1</div>
+                <div id="item2">2</div>
+                <div id="item3">3</div>
+        </div>
+        <div id="container-right"></div>
+    </div>
+</body>
+</html>
