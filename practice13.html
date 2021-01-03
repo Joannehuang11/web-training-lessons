@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: mintcream;
+        }
+
+        button {
+            background-color: white;
+            position:absolute;
+            left:calc(50% - 100px / 2);
+            top:calc(80% - 100px / 2);
+            width: 100px;
+            height: 100px;
+            border: white solid 1px;
+            border-radius: 50%;
+            font-size: 3em;
+        }
+
+        input {
+            background-color: white;
+            position: absolute;
+            left:calc(50% - 300px / 2);
+            top:calc(50% - 50px / 2);
+            width: 300px;
+            height: 50px;
+            border: black solid 2px;
+            font-size:2em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="btn-1">👋 </button>
+
+    <input id="input-1" type="text"></input>
+
+    <script>
+
+        let val = "";
+    
+        function handleInputChange(e) {
+            val = e.target.value
+        }
+        
+        function handleClick() {
+            alert(`${val} is a cute shiba!`);
+        }
+
+        const targetBtn = document.getElementById("btn-1");
+        const targetInput = document.getElementById("input-1");
+
+        //targetBtn.onclick = handleClick;
+        targetBtn.addEventListener("click", handleClick)
+        targetInput.addEventListener("change", handleInputChange);
+
+    </script>
+</body>
+</html>
