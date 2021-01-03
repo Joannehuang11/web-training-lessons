@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <script>
+    
+        const numArr = [1, 2, 3, 4, 5];
+        
+        for (const n of numArr) {
+            console.log('n', n)
+        }
+
+        const name = "AndrewChen";
+        const age = 29;
+
+        if (age === "29") {
+            console.log("too old");
+        }
+
+        const user = {
+            name: "Andrew",
+            age: 29,
+            address:{
+                city: "Taipei",
+                addr: "Xinyi..",
+            }
+        }
+
+        console.log(Boolean(undefined))
+        console.log(Boolean(null))
+        console.log(Boolean(""))
+        console.log('--------------------')
+        console.log(Boolean("xxx"))
+        console.log(Boolean(123))
+
+        if (user.address && user.address.city) {
+            console.log(user.address.city)
+        }
+
+        if (user.gender) {
+            console.log(`your gender is ${user.gender}`)
+        }
+        
+        if (user.age >= 29) {
+            console.log('too young')
+        }
+
+    </script>
+</body>
+
+</html>
