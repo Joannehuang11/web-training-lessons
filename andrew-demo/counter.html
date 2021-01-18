@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    button, input {
+      width: 100px;
+      height: 40px;
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <input id="input-1" type="text"/>
+
+  <button id="btn-1">
+    按我！
+  </button>
+
+  <script>
+
+    let val = '';
+
+    document.
+      getElementById('btn-1').
+      addEventListener('click', function() {
+        alert(val);
+      });
+    
+    document.
+      getElementById('input-1').
+      addEventListener('change', function(e) {
+        val = e.target.value;
+      });
+
+  </script>
+</body>
+</html>
